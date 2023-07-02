@@ -4,11 +4,11 @@
 
 Console.WriteLine("Lets check your number  ");
 int number = int.Parse(Console.ReadLine());
-int index = 1;
+int index = 0;
 
-    while( number/10 != 0 ){
-        number = number/10;
-        index++;
-        
-        }
-    Console.WriteLine(index);
+while (number != 0)
+{
+    number = number / 10;
+    index++;
+}
+Console.WriteLine($"The number of digits in your number is {index} ");
